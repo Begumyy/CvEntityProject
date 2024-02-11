@@ -46,11 +46,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <label for="drop" class="toggle">Menu</label>
                     <input type="checkbox" id="drop">
 						<ul class="menu">
-							<li class="active"><a href="#home" class="scroll">Home</a></li>
-							 <li class="mt-sm-3"><a href="#about" class="scroll">About</a></li>
-							<li class="mt-sm-3"><a href="#services" class="scroll">Services</a></li>
-							<li class="mt-sm-3"><a href="#news" class="scroll">News</a></li>
-                            <li class="mt-sm-3"><a href="#contact" class="scroll">Contact</a></li>
+							<li class="active"><a href="#home" class="scroll">Home Page</a></li>
+							 <li class="mt-sm-3"><a href="#about" class="scroll">My Education Journey</a></li>
+							<li class="mt-sm-3"><a href="#services" class="scroll">My Skills</a></li>
+							<li class="mt-sm-3"><a href="#news" class="scroll">My Experiences</a></li>
+                            <li class="mt-sm-3"><a href="#contact" class="scroll">Contact Me</a></li>
                         </ul>
 				</nav>
 			</div>
@@ -61,18 +61,29 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="banner-text-w3ls" id="home">
 			<div class="container">
                 <div class="mx-auto text-center">
-                    <h3>Nibh eleifend nulla nascetur pharetra
-				</h3>
-					<p class="banp mx-auto mt-3">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu  </p>
+                    <h3>Software CV Skill Website</h3>
+					<p class="banp mx-auto mt-3">
+						<asp:Repeater ID="Repeater1" runat="server">
+							<ItemTemplate>
+								<%# Eval("PERSONALINFORMATION") %>
+							</ItemTemplate>
+						</asp:Repeater>
+					</p>
 					<a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr" href="#about" role="button">Learn More</a>
                 </div>
             </div>
         </div>
 		<!-- about -->
 <section class="slide-wrapper" id="about">
-	<h2 class="w3_head mb-4">About Me </h2>
-	<h4 class="main_hd"> Fermentum lobortis non tristique ante proin sociis <br>accumsan lobortis auctor etiam.</h4>
-	<p class="iner mt-md-5"> Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. Primis aliquam mus lacinia lobortis phasellus suscipit. Fermentum lobortis non tristique ante proin sociis accumsan lobortis. Auctor etiam porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum integer purus sapien. Nibh eleifend nulla nascetur pharetra commodo mi augue interdum tellus. Ornare cursus augue feugiat sodales velit lorem. Semper elementum ullamcorper lacinia natoque aenean scelerisque.</p>
+	<h2 class="w3_head mb-4">My Education Journey </h2>
+	
+	<p class="iner mt-md-5">
+		<asp:Repeater ID="Repeater2" runat="server">
+			<ItemTemplate>
+				<%# Eval("EDUCATION") %>
+			</ItemTemplate>
+		</asp:Repeater>
+	</p>
 </section>
 <!-- //about -->
 <!-- services -->
