@@ -33,9 +33,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<h1>Software ID Card</h1>
 		<div class="w3_agile_main_grids">
 			<div class="w3layouts_main_grid_left">	
-				<div class="w3_main_grid_left_grid">	
-					<h2>adsoyad</h2>
-					<p>Yazılım Geliştirici, İş Analisti ve Test Uzmanı </p>
+				<div class="w3_main_grid_left_grid">
+					<%--adsoyad için repeater asp.net web form'da verileri çekebilmek için repeater'a ihtiyaç duyulur. bunu da toolbox > repeater seçeriz.--%>
+					<asp:Repeater ID="Repeater1" runat="server">
+						<ItemTemplate>
+							<h2><%# Eval("PERSONALINFORMATION") %></h2>
+						</ItemTemplate>
+					</asp:Repeater> 
+					
+					<p>Software Developer, Business Analyst ve Test Specialist </p>
 					<div class="w3l_figure">
 						<img src="web/images/1.png" alt=" " />
 					</div>
@@ -56,8 +62,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<li><i class="fa fa-info" aria-hidden="true"></i>Help</li>
 						</ul>
 						<div class="resp-tabs-container hor_1">
-							<div class="agileits_main_grid_right_grid">	
-								<p>DENEMEEEEEE</p>
+							<div class="agileits_main_grid_right_grid">
+								<div style="font-size:large; font-weight:bolder; margin-bottom:15px">
+								<h3>My Education Journey</h3>
+								</div>
+								<p>
+									<asp:Repeater ID="Repeater2" runat="server">
+										<ItemTemplate>
+											<%# Eval("EDUCATION") %>
+										</ItemTemplate>
+									</asp:Repeater>
+								</p>
+
+
+								<div style="font-size:large; font-weight:bolder; margin-top:15px">
+                                <h3>Work Experiences</h3>
+                                </div>
+                                <p>
+				              <asp:Repeater ID="Repeater3" runat="server">
+								<ItemTemplate>
+									<%# Eval("WORKEXPERIENCES") %>
+								</ItemTemplate>
+				              </asp:Repeater>
+                                </p>
+
+
 								<div class="wthree_tab_grid_sub">
 									<div class="wthree_tab_grid_sub_left">
 										<h5>321</h5>
