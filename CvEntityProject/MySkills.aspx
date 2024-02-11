@@ -17,7 +17,7 @@
                 <tr>
                     <td><%# Eval("ID")  %></td>
                     <td><%# Eval("SKILL")  %></td>
-                    <td><a href="#" class="btn btn-danger">Delete</a></td>
+                    <td><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "DeleteSkill.aspx?ID=" + Eval("ID") %>' CssClass="btn btn-danger">Delete</asp:HyperLink></td>
                     <td><a href="#" class="btn btn-success">Update</a></td>
                 </tr>
             </ItemTemplate>

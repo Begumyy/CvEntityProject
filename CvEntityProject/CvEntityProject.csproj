@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="DeleteSkill.aspx" />
     <Content Include="Experiences.aspx" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -125,6 +126,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteSkill.aspx.cs">
+      <DependentUpon>DeleteSkill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteSkill.aspx.designer.cs">
+      <DependentUpon>DeleteSkill.aspx</DependentUpon>
     </Compile>
     <Compile Include="Experiences.aspx.cs">
       <DependentUpon>Experiences.aspx</DependentUpon>
