@@ -15,7 +15,6 @@ namespace CvEntityProject
     public partial class SKILLS
     {
         public byte ID { get; set; }
-        public string YETENEK { get; set; }
-        public Nullable<byte> DERECE { get; set; }
+        public string SKILL { get; set; }
     }
 }

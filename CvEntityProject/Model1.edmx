@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DbCvEntityModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DbCvEntityModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="ABOUTME">
           <Key>
             <PropertyRef Name="ID" />
@@ -32,6 +32,7 @@
           <Property Name="NAMESURNAME" Type="varchar" MaxLength="50" />
           <Property Name="MAIL" Type="varchar" MaxLength="50" />
           <Property Name="MESSAGE" Type="varchar" MaxLength="500" />
+          <Property Name="SUBJECT" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="MYWORKS">
           <Key>
@@ -45,8 +46,7 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="YETENEK" Type="varchar" MaxLength="50" />
-          <Property Name="DERECE" Type="tinyint" />
+          <Property Name="SKILL" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityContainer Name="DbCvEntityModelStoreContainer">
           <EntitySet Name="ABOUTME" EntityType="Self.ABOUTME" Schema="dbo" store:Type="Tables" />
@@ -55,8 +55,7 @@
           <EntitySet Name="MYWORKS" EntityType="Self.MYWORKS" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SKILLS" EntityType="Self.SKILLS" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DbCvEntityModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -87,6 +86,7 @@
           <Property Name="NAMESURNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="MAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="MESSAGE" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="SUBJECT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="MYWORKS">
           <Key>
@@ -100,10 +100,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="YETENEK" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="DERECE" Type="Byte" />
+          <Property Name="SKILL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="DbCvEntityEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="DbCvEntityEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ABOUTME" EntityType="Self.ABOUTME" />
           <EntitySet Name="ADDRESS" EntityType="Self.ADDRESS" />
           <EntitySet Name="CONTACT" EntityType="Self.CONTACT" />
@@ -115,7 +114,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="DbCvEntityModelStoreContainer" CdmEntityContainer="DbCvEntityEntities">
+        <EntityContainerMapping StorageEntityContainer="DbCvEntityModelStoreContainer" CdmEntityContainer="DbCvEntityEntities1">
           <EntitySetMapping Name="ABOUTME">
             <EntityTypeMapping TypeName="DbCvEntityModel.ABOUTME">
               <MappingFragment StoreEntitySet="ABOUTME">
@@ -140,6 +139,7 @@
           <EntitySetMapping Name="CONTACT">
             <EntityTypeMapping TypeName="DbCvEntityModel.CONTACT">
               <MappingFragment StoreEntitySet="CONTACT">
+                <ScalarProperty Name="SUBJECT" ColumnName="SUBJECT" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="NAMESURNAME" ColumnName="NAMESURNAME" />
                 <ScalarProperty Name="MAIL" ColumnName="MAIL" />
@@ -159,8 +159,7 @@
             <EntityTypeMapping TypeName="DbCvEntityModel.SKILLS">
               <MappingFragment StoreEntitySet="SKILLS">
                 <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="YETENEK" ColumnName="YETENEK" />
-                <ScalarProperty Name="DERECE" ColumnName="DERECE" />
+                <ScalarProperty Name="SKILL" ColumnName="SKILL" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

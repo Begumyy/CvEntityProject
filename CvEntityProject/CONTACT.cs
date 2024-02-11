@@ -18,5 +18,6 @@ namespace CvEntityProject
         public string NAMESURNAME { get; set; }
         public string MAIL { get; set; }
         public string MESSAGE { get; set; }
+        public string SUBJECT { get; set; }
     }
 }

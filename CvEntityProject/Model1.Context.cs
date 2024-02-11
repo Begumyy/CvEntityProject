@@ -13,10 +13,10 @@ namespace CvEntityProject
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DbCvEntityEntities : DbContext
+    public partial class DbCvEntityEntities1 : DbContext
     {
-        public DbCvEntityEntities()
-            : base("name=DbCvEntityEntities")
+        public DbCvEntityEntities1()
+            : base("name=DbCvEntityEntities1")
         {
         }
     
