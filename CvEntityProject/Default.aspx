@@ -9,7 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Delightful Profile Flat Responsive Widget Template :: w3layouts</title>
+<title>Entity CV Project</title>
 <!-- custom-theme -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -30,12 +30,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body>
 	<div class="main">	
-		<h1>Delightful Profile</h1>
+		<h1>Software ID Card</h1>
 		<div class="w3_agile_main_grids">
 			<div class="w3layouts_main_grid_left">	
 				<div class="w3_main_grid_left_grid">	
-					<h2>Delightful Profile</h2>
-					<p>Curabitur in turpis porta, tincidunt quam ac, consequat ante.</p>
+					<h2>adsoyad</h2>
+					<p>Yazılım Geliştirici, İş Analisti ve Test Uzmanı </p>
 					<div class="w3l_figure">
 						<img src="web/images/1.png" alt=" " />
 					</div>
@@ -50,19 +50,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="w3ls_main_grid_right_grid">	
 					<div id="parentHorizontalTab">
 						<ul class="resp-tabs-list hor_1">
-							<li><i class="fa fa-user" aria-hidden="true"></i>About me</li>
-							<li><i class="fa fa-briefcase" aria-hidden="true"></i>my work</li>
-							<li><i class="fa fa-map-marker" aria-hidden="true"></i>Contact me</li>
+							<li><i class="fa fa-user" aria-hidden="true"></i>About Me</li>
+							<li><i class="fa fa-briefcase" aria-hidden="true"></i>My Work</li>
+							<li><i class="fa fa-map-marker" aria-hidden="true"></i>Contact Me</li>
+							<li><i class="fa fa-info" aria-hidden="true"></i>Help</li>
 						</ul>
 						<div class="resp-tabs-container hor_1">
 							<div class="agileits_main_grid_right_grid">	
-								<p class="agileinfo_para">Aliquam sodales dolor ac lorem vulputate, eu maximus 
-									velit semper. Sed erat lacus, ultrices in iaculis ac, 
-									laoreet quis felis.Vivamus laoreet ultrices mi, quis euismod eros. 
-									Sed et sodales leo, a porta turpis. Curabitur porta massa in quam sagittis vehicula. 
-									<i>Sed vitae hendrerit ex. Aliquam in tortor venenatis, iaculis nunc eu, 
-									vestibulum purus. Duis sed efficitur ipsum. Curabitur in turpis porta, 
-									tincidunt quam ac, consequat ante.</i></p>
+								<p>DENEMEEEEEE</p>
 								<div class="wthree_tab_grid_sub">
 									<div class="wthree_tab_grid_sub_left">
 										<h5>321</h5>
