@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DbCvEntityModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ABOUTME">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PERSONALINFORMATION" Type="varchar" MaxLength="500" />
+          <Property Name="EDUCATION" Type="varchar" MaxLength="500" />
+          <Property Name="WORKEXPERIENCES" Type="varchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="ADDRESS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TELEPHONE" Type="varchar" MaxLength="20" />
+          <Property Name="MAIL" Type="varchar" MaxLength="50" />
+          <Property Name="ADRES" Type="varchar" MaxLength="50" />
+          <Property Name="KONUM" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="CONTACT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAMESURNAME" Type="varchar" MaxLength="50" />
+          <Property Name="MAIL" Type="varchar" MaxLength="50" />
+          <Property Name="MESSAGE" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="MYWORKS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ADRES" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="SKILLS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="YETENEK" Type="varchar" MaxLength="50" />
+          <Property Name="DERECE" Type="tinyint" />
+        </EntityType>
+        <EntityContainer Name="DbCvEntityModelStoreContainer">
+          <EntitySet Name="ABOUTME" EntityType="Self.ABOUTME" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ADDRESS" EntityType="Self.ADDRESS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CONTACT" EntityType="Self.CONTACT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MYWORKS" EntityType="Self.MYWORKS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SKILLS" EntityType="Self.SKILLS" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DbCvEntityModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ABOUTME">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PERSONALINFORMATION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="EDUCATION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="WORKEXPERIENCES" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ADDRESS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TELEPHONE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="MAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ADRES" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="KONUM" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="CONTACT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAMESURNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MESSAGE" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="MYWORKS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ADRES" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="SKILLS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="YETENEK" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DERECE" Type="Byte" />
+        </EntityType>
+        <EntityContainer Name="DbCvEntityEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ABOUTME" EntityType="Self.ABOUTME" />
+          <EntitySet Name="ADDRESS" EntityType="Self.ADDRESS" />
+          <EntitySet Name="CONTACT" EntityType="Self.CONTACT" />
+          <EntitySet Name="MYWORKS" EntityType="Self.MYWORKS" />
+          <EntitySet Name="SKILLS" EntityType="Self.SKILLS" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DbCvEntityModelStoreContainer" CdmEntityContainer="DbCvEntityEntities">
+          <EntitySetMapping Name="ABOUTME">
+            <EntityTypeMapping TypeName="DbCvEntityModel.ABOUTME">
+              <MappingFragment StoreEntitySet="ABOUTME">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="PERSONALINFORMATION" ColumnName="PERSONALINFORMATION" />
+                <ScalarProperty Name="EDUCATION" ColumnName="EDUCATION" />
+                <ScalarProperty Name="WORKEXPERIENCES" ColumnName="WORKEXPERIENCES" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ADDRESS">
+            <EntityTypeMapping TypeName="DbCvEntityModel.ADDRESS">
+              <MappingFragment StoreEntitySet="ADDRESS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TELEPHONE" ColumnName="TELEPHONE" />
+                <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+                <ScalarProperty Name="ADRES" ColumnName="ADRES" />
+                <ScalarProperty Name="KONUM" ColumnName="KONUM" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CONTACT">
+            <EntityTypeMapping TypeName="DbCvEntityModel.CONTACT">
+              <MappingFragment StoreEntitySet="CONTACT">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAMESURNAME" ColumnName="NAMESURNAME" />
+                <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+                <ScalarProperty Name="MESSAGE" ColumnName="MESSAGE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MYWORKS">
+            <EntityTypeMapping TypeName="DbCvEntityModel.MYWORKS">
+              <MappingFragment StoreEntitySet="MYWORKS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ADRES" ColumnName="ADRES" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SKILLS">
+            <EntityTypeMapping TypeName="DbCvEntityModel.SKILLS">
+              <MappingFragment StoreEntitySet="SKILLS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="YETENEK" ColumnName="YETENEK" />
+                <ScalarProperty Name="DERECE" ColumnName="DERECE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
