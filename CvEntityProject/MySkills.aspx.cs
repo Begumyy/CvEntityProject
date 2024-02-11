@@ -11,7 +11,9 @@ namespace CvEntityProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            DbCvEntityEntities1 db = new DbCvEntityEntities1();
+            Repeater1.DataSource = db.SKILLS.ToList();
+            Repeater1.DataBind();
         }
     }
 }
