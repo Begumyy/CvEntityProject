@@ -74,7 +74,7 @@
 						<%--<button class="login100-form-btn">
 							Login
 						</button>--%>
-						<asp:Button ID="Button1" runat="server" Text="Sign In" class="login100-form-btn" />
+						<asp:Button ID="Button1" runat="server" Text="Sign In" class="login100-form-btn" OnClick="Button1_Click" />
 					</div>
 				</form>
 			</div>
