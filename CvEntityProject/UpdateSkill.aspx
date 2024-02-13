@@ -8,6 +8,6 @@
 
 <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" placeholder="skill..."></asp:TextBox> <%--bunun içine placeholder'da eklenebilir üsttekini yorum satırına almalısın eğer burada placeholder kullanacaksan.--%>
 <br />
-<asp:Button ID="Button1" runat="server" Text="Save" CssClass="btn btn-group" />
+<asp:Button ID="Button1" runat="server" Text="Save" CssClass="btn btn-group" OnClick="Button1_Click" />
 
 </asp:Content>
