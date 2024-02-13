@@ -89,6 +89,7 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="NewSkill.aspx" />
+    <Content Include="UpdateSkill.aspx" />
     <Content Include="Web.config" />
     <Content Include="MySkills.aspx" />
     <Content Include="web\css\bootstrap.css" />
@@ -176,6 +177,13 @@
     </Compile>
     <Compile Include="MySkills.aspx.designer.cs">
       <DependentUpon>MySkills.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSkill.aspx.cs">
+      <DependentUpon>UpdateSkill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateSkill.aspx.designer.cs">
+      <DependentUpon>UpdateSkill.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
