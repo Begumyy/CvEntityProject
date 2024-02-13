@@ -79,6 +79,7 @@
     <Content Include="Default.aspx" />
     <Content Include="DeleteSkill.aspx" />
     <Content Include="Experiences.aspx" />
+    <Content Include="MessageDetail.aspx" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -149,6 +150,13 @@
     </Compile>
     <Compile Include="Experiences.aspx.designer.cs">
       <DependentUpon>Experiences.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MessageDetail.aspx.cs">
+      <DependentUpon>MessageDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MessageDetail.aspx.designer.cs">
+      <DependentUpon>MessageDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
