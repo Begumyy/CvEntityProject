@@ -46,7 +46,7 @@
         <div class="icon-text">
             <h3>
                 <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></h3>
-            <p>Kasadaki Tutar</p>
+            <p>Total Skill</p>
         </div>
         <div class="clearfix"></div>
     </div>
@@ -56,7 +56,7 @@
         </div>
         <div class="icon-text">
             <h3><asp:Label ID="Label2" runat="server" Text="Label"></asp:Label></h3>
-            <p>Toplam Üye</p>
+            <p>Incoming Messages</p>
         </div>
         <div class="clearfix"></div>
     </div>
@@ -66,7 +66,7 @@
         </div>
         <div class="icon-text">
             <h3><asp:Label ID="Label3" runat="server" Text="Label"></asp:Label></h3>
-            <p>Kitap Sayımız</p>
+            <p>Total Average Grade</p>
         </div>
         <div class="clearfix"></div>
     </div>
@@ -76,7 +76,7 @@
         </div>
         <div class="icon-text">
             <h3><asp:Label ID="Label4" runat="server" Text="Label"></asp:Label></h3>
-            <p>Emanet Kitaplar</p>
+            <p>Highest Grade</p>
         </div>
         <div class="clearfix"></div>
     </div>
@@ -120,7 +120,7 @@
                 <div class="skill2" style="width:76%"></div>
             </div>
         </div>
-        <p>Kütüphane Yönetim Sistemi projemizin admin paneli kısmındasınız. Kütüphane Sistemi size iyi okumalar diler.</p>
+        <p>Entity CV projemin admin paneli kısmındasınız. Keyifli kodlamalar dilerim.</p>
     </div>
     <div class="clearfix"></div>
 </div>
