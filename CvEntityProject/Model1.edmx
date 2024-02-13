@@ -24,6 +24,14 @@
           <Property Name="ADRES" Type="varchar" MaxLength="50" />
           <Property Name="KONUM" Type="varchar" MaxLength="200" />
         </EntityType>
+        <EntityType Name="ADMIN">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="USERNAME" Type="varchar" MaxLength="10" />
+          <Property Name="SIFRE" Type="varchar" MaxLength="10" />
+        </EntityType>
         <EntityType Name="CONTACT">
           <Key>
             <PropertyRef Name="ID" />
@@ -51,6 +59,7 @@
         <EntityContainer Name="DbCvEntityModelStoreContainer">
           <EntitySet Name="ABOUTME" EntityType="Self.ABOUTME" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ADDRESS" EntityType="Self.ADDRESS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ADMIN" EntityType="Self.ADMIN" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CONTACT" EntityType="Self.CONTACT" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="MYWORKS" EntityType="Self.MYWORKS" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SKILLS" EntityType="Self.SKILLS" Schema="dbo" store:Type="Tables" />
@@ -108,7 +117,16 @@
           <EntitySet Name="CONTACT" EntityType="Self.CONTACT" />
           <EntitySet Name="MYWORKS" EntityType="Self.MYWORKS" />
           <EntitySet Name="SKILLS" EntityType="Self.SKILLS" />
+          <EntitySet Name="ADMIN" EntityType="DbCvEntityModel.ADMIN" />
         </EntityContainer>
+        <EntityType Name="ADMIN">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="USERNAME" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="SIFRE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -160,6 +178,15 @@
               <MappingFragment StoreEntitySet="SKILLS">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="SKILL" ColumnName="SKILL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ADMIN">
+            <EntityTypeMapping TypeName="DbCvEntityModel.ADMIN">
+              <MappingFragment StoreEntitySet="ADMIN">
+                <ScalarProperty Name="SIFRE" ColumnName="SIFRE" />
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
