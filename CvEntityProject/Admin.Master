@@ -24,7 +24,7 @@
                     <li><a href="#">My Education Journey</a></li>
                     <li><a href="#">Experiences</a></li>
                     <li><a href="MySkills.aspx">My Skills</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="Contact.aspx">Contact</a></li>
                 </ul>
             </div>
         </nav>
