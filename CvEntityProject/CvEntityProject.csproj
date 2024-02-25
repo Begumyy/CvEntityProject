@@ -187,6 +187,7 @@
     <Content Include="web\fonts\fontawesome-webfont.svg" />
     <Content Include="web\images\about.jpg" />
     <Content Include="web\images\banner1.jpg" />
+    <Content Include="web\images\cvresim.png" />
     <Content Include="web\images\g1.jpg" />
     <Content Include="web\images\g2.jpg" />
     <Content Include="web\images\g3.jpg" />

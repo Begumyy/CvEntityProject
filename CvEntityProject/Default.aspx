@@ -35,7 +35,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>
     <div class="sidenav text-center">
         <div class="side_top">
-            <img src="web/images/about.jpg" alt="news image" class="img-fluid navimg">
+            <img src="web/images/cvresim.png" alt="news image" class="img-fluid navimg">
             <h1 class="top_hd mt-2"><a href="index.html">Begüm Yünkül</a></h1>
             <p class="top_hdp mt-2">Software Developer, Business Analyst, Test Specialist</p>
         </div>
@@ -61,7 +61,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="banner-text-w3ls" id="home">
             <div class="container">
                 <div class="mx-auto text-center">
-                    <h3>Software CV Skill Website</h3>
+                    <h3>Software Developer, Business Analyst, Test Specialist</h3>
                     <p class="banp mx-auto mt-3">
                         <asp:Repeater ID="Repeater1" runat="server">
                             <ItemTemplate>
