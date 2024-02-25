@@ -349,7 +349,6 @@ li > a:only-child:after {
 
 }
 .sidenav {
-	height: 100%;
 	width: 320px;
 	position: fixed;
 	z-index: 1;

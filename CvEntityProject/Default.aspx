@@ -51,6 +51,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <li class="mt-sm-3"><a href="#services" class="scroll">My Skills</a></li>
                         <li class="mt-sm-3"><a href="#news" class="scroll">My Experiences</a></li>
                         <li class="mt-sm-3"><a href="#contact" class="scroll">Contact Me</a></li>
+                        <li class="mt-sm-3"><a href="#Login.aspx" class="scroll">Login</a></li>
                     </ul>
                 </nav>
             </div>
